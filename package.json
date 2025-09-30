@@ -1,0 +1,17 @@
+{
+  "name": "01-boda",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@midudev/tailwind-animations": "^0.2.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.14.1",
+    "tailwindcss": "^4.1.13"
+  }
+}

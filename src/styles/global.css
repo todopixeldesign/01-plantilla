@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+
+@theme {
+  --color-primary: #0F0E0E;
+  --color-secondary: #541212;
+  --color-accent: #468A9A;
+  --color-base: #EEEEEE;
+
+  --font-heading: sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-subtitle: ui-serif, Georgia, "Times New Roman", Times, serif;
+  --font-text: ui-monospace, "Liberation Mono", "Courier New", monospace;
+  --font-x: Poppins, sans-serif;
+}
