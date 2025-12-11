@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
 
-const {pageTitle} = Astro.props 
+const { pageTitle } = Astro.props;
+const description = "";
+const url = "";
+const image = "/images/";
 ---
 
 <!doctype html>
@@ -10,22 +13,32 @@ const {pageTitle} = Astro.props
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="description" content="" />            <!-- Descripción de la página -->
+    <meta name="description" content={description} />
+    <!-- Descripción de la página -->
 
-    <meta property="og:url" content="" />             <!-- URL de la página -->
+    <meta property="og:url" content={url} />
+    <!-- URL de la página -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />           <!-- Título de la página -->
-    <meta property="og:description" content="" />     <!-- Descripción de la página -->
-    <meta property="og:image" content="/images/" />   <!-- Imagen representativa de la página -->
+    <meta property="og:title" content={pageTitle} />
+    <!-- Título de la página -->
+    <meta property="og:description" content={description} />
+    <!-- Descripción de la página -->
+    <meta property="og:image" content={image} />
+    <!-- Imagen representativa de la página -->
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="" />        <!-- Dominio del sitio -->
-    <meta property="twitter:url" content="" />           <!-- URL de la página -->
-    <meta name="twitter:title" content="" />             <!-- Título de la página -->
-    <meta name="twitter:description" content="" />       <!-- Descripción de la página -->
-    <meta name="twitter:image" content="/images/" />     <!-- Imagen representativa de la página -->
-  
+    <meta property="twitter:domain" content={url} />
+    <!-- Dominio del sitio -->
+    <meta property="twitter:url" content={url} />
+    <!-- URL de la página -->
+    <meta name="twitter:title" content={pageTitle} />
+    <!-- Título de la página -->
+    <meta name="twitter:description" content={description} />
+    <!-- Descripción de la página -->
+    <meta name="twitter:image" content={image} />
+    <!-- Imagen representativa de la página -->
+
     <title>{pageTitle}</title>
   </head>
   <body>
