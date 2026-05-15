@@ -1,10 +1,9 @@
 ---
 import "../styles/global.css";
-
+import todoPixel from "@/assets/TodoPixel.png";
 const { pageTitle } = Astro.props;
 const description = "";
 const url = "";
-const image = "/images/";
 ---
 
 <!doctype html>
@@ -23,7 +22,7 @@ const image = "/images/";
     <!-- Título de la página -->
     <meta property="og:description" content={description} />
     <!-- Descripción de la página -->
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={todoPixel.src} />
     <!-- Imagen representativa de la página -->
 
     <!-- Twitter Meta Tags -->
@@ -36,7 +35,7 @@ const image = "/images/";
     <!-- Título de la página -->
     <meta name="twitter:description" content={description} />
     <!-- Descripción de la página -->
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={todoPixel.src} />
     <!-- Imagen representativa de la página -->
 
     <title>{pageTitle}</title>
